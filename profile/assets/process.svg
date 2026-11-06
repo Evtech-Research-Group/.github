@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240" role="img" aria-label="Process: Define, Design, Build">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#131a23"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .line { fill: none; stroke: #30363d; stroke-width: 2; }
+    .flow { fill: none; stroke: #e53935; stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 60 520; animation: flow 4.5s linear infinite; }
+    .ring { fill: #0d1117; stroke: #30363d; stroke-width: 2; }
+    .ringOn { fill: none; stroke: #e53935; stroke-width: 2.5; opacity: 0; animation: lit 4.5s ease-in-out infinite; }
+    .r2 { animation-delay: 1.5s; } .r3 { animation-delay: 3s; }
+    .num { font: 700 26px 'SFMono-Regular', Menlo, Consolas, monospace; fill: #e53935; }
+    .h { font: 700 24px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #f0f3f6; letter-spacing: 2px; }
+    .p { font: 400 18px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #8b949e; }
+    @keyframes flow { from { stroke-dashoffset: 580; } to { stroke-dashoffset: 0; } }
+    @keyframes lit { 0%,100% { opacity: 0; } 10%,30% { opacity: 1; } 40% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .flow, .ringOn { animation: none; } }
+  </style>
+
+  <rect width="1280" height="238" rx="14" fill="url(#bg)" stroke="#30363d"/>
+
+  <path class="line" d="M253 70 H1027"/>
+  <path class="flow" d="M253 70 H640"/>
+  <path class="flow" style="animation-delay:1.5s" d="M640 70 H1027"/>
+
+  <g>
+    <circle class="ring" cx="253" cy="70" r="34"/>
+    <circle class="ringOn" cx="253" cy="70" r="34"/>
+    <text class="num" x="253" y="79" text-anchor="middle">01</text>
+    <text class="h" x="253" y="140" text-anchor="middle">DEFINE</text>
+    <text class="p" x="253" y="172" text-anchor="middle">Problem, constraints, users,</text>
+    <text class="p" x="253" y="198" text-anchor="middle">timeline, and technical risk</text>
+  </g>
+  <g>
+    <circle class="ring" cx="640" cy="70" r="34"/>
+    <circle class="ringOn r2" cx="640" cy="70" r="34"/>
+    <text class="num" x="640" y="79" text-anchor="middle">02</text>
+    <text class="h" x="640" y="140" text-anchor="middle">DESIGN</text>
+    <text class="p" x="640" y="172" text-anchor="middle">Electronics, software, mechanical</text>
+    <text class="p" x="640" y="198" text-anchor="middle">structure, data flow, test criteria</text>
+  </g>
+  <g>
+    <circle class="ring" cx="1027" cy="70" r="34"/>
+    <circle class="ringOn r3" cx="1027" cy="70" r="34"/>
+    <text class="num" x="1027" y="79" text-anchor="middle">03</text>
+    <text class="h" x="1027" y="140" text-anchor="middle">BUILD</text>
+    <text class="p" x="1027" y="172" text-anchor="middle">Fabricate, integrate, code,</text>
+    <text class="p" x="1027" y="198" text-anchor="middle">document, and validate</text>
+  </g>
+</svg>

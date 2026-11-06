@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="Services: Electronics and Embedded Systems, Robotics and Automation, AI Machine Learning and Software, 3D Design and 3D Printing">
+  <style>
+    .card { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+    .edge { fill: none; stroke: #e53935; stroke-width: 2; stroke-dasharray: 120 1500; animation: run 8s linear infinite; }
+    .e2 { animation-delay: 2s; } .e3 { animation-delay: 4s; } .e4 { animation-delay: 6s; }
+    .ico { fill: none; stroke: #e53935; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .icoFill { fill: #e53935; }
+    .h { font: 700 25px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #f0f3f6; }
+    .p { font: 400 19px 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #8b949e; }
+    .k { font: 600 14px 'SFMono-Regular', Menlo, Consolas, monospace; fill: #e53935; letter-spacing: 2px; }
+    .blink { animation: blink 1.6s ease-in-out infinite; }
+    .b2 { animation-delay: .4s; } .b3 { animation-delay: .8s; } .b4 { animation-delay: 1.2s; }
+    .spin { animation: spin 8s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .dash { stroke-dasharray: 4 6; animation: dash 1.5s linear infinite; }
+    .bob { animation: bob 3s ease-in-out infinite; }
+    @keyframes run { from { stroke-dashoffset: 1620; } to { stroke-dashoffset: 0; } }
+    @keyframes blink { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes dash { to { stroke-dashoffset: -20; } }
+    @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <!-- Card 1: Electronics -->
+  <g transform="translate(0,0)">
+    <rect class="card" x="1" y="1" width="628" height="198" rx="12"/>
+    <rect class="edge" x="1" y="1" width="628" height="198" rx="12"/>
+    <g transform="translate(40,52)">
+      <rect class="ico" x="14" y="14" width="64" height="64" rx="6"/>
+      <rect class="ico" x="32" y="32" width="28" height="28" rx="3"/>
+      <g class="ico">
+        <path class="blink"    d="M28 14V2 M46 14V2 M64 14V2"/>
+        <path class="blink b2" d="M78 28H90 M78 46H90 M78 64H90"/>
+        <path class="blink b3" d="M28 78V90 M46 78V90 M64 78V90"/>
+        <path class="blink b4" d="M14 28H2 M14 46H2 M14 64H2"/>
+      </g>
+    </g>
+    <text class="k" x="170" y="58">01 / HARDWARE</text>
+    <text class="h" x="170" y="96">Electronics and Embedded Systems</text>
+    <text class="p" x="170" y="132">Custom PCB design, sensors, firmware,</text>
+    <text class="p" x="170" y="160">IoT dashboards, and machine controllers.</text>
+  </g>
+
+  <!-- Card 2: Robotics -->
+  <g transform="translate(650,0)">
+    <rect class="card" x="1" y="1" width="628" height="198" rx="12"/>
+    <rect class="edge e2" x="1" y="1" width="628" height="198" rx="12"/>
+    <g transform="translate(40,52)">
+      <g class="spin">
+        <path class="ico" d="M46 16 l5 0 2 8 6 3 7-4 4 4-4 7 3 6 8 2 0 6-8 2-3 6 4 7-4 4-7-4-6 3-2 8-6 0-2-8-6-3-7 4-4-4 4-7-3-6-8-2 0-6 8-2 3-6-4-7 4-4 7 4 6-3 2-8z"/>
+        <circle class="ico" cx="48" cy="46" r="9"/>
+      </g>
+    </g>
+    <text class="k" x="170" y="58">02 / MOTION</text>
+    <text class="h" x="170" y="96">Robotics and Automation</text>
+    <text class="p" x="170" y="132">Robotic systems, smart mechanisms, mechatronics,</text>
+    <text class="p" x="170" y="160">automation prototypes, and competition robots.</text>
+  </g>
+
+  <!-- Card 3: AI / ML -->
+  <g transform="translate(0,220)">
+    <rect class="card" x="1" y="1" width="628" height="198" rx="12"/>
+    <rect class="edge e3" x="1" y="1" width="628" height="198" rx="12"/>
+    <g transform="translate(40,52)">
+      <g class="ico dash">
+        <path d="M10 20 L46 10 M10 20 L46 46 M10 20 L46 82 M10 72 L46 10 M10 72 L46 46 M10 72 L46 82 M46 10 L84 46 M46 46 L84 46 M46 82 L84 46"/>
+      </g>
+      <circle class="icoFill blink"    cx="10" cy="20" r="6"/>
+      <circle class="icoFill blink b2" cx="10" cy="72" r="6"/>
+      <circle class="icoFill blink b3" cx="46" cy="10" r="6"/>
+      <circle class="icoFill blink"    cx="46" cy="46" r="6"/>
+      <circle class="icoFill blink b4" cx="46" cy="82" r="6"/>
+      <circle class="icoFill blink b2" cx="84" cy="46" r="7"/>
+    </g>
+    <text class="k" x="170" y="58">03 / INTELLIGENCE</text>
+    <text class="h" x="170" y="96">AI, Machine Learning, and Software</text>
+    <text class="p" x="170" y="132">Computer vision, detection models, data workflows,</text>
+    <text class="p" x="170" y="160">research prototypes, and smart applications.</text>
+  </g>
+
+  <!-- Card 4: 3D -->
+  <g transform="translate(650,220)">
+    <rect class="card" x="1" y="1" width="628" height="198" rx="12"/>
+    <rect class="edge e4" x="1" y="1" width="628" height="198" rx="12"/>
+    <g transform="translate(40,52)">
+      <g class="bob">
+        <path class="ico" d="M46 6 L84 26 L84 66 L46 86 L8 66 L8 26 Z"/>
+        <path class="ico" d="M8 26 L46 46 L84 26 M46 46 V86"/>
+      </g>
+    </g>
+    <text class="k" x="170" y="58">04 / FABRICATION</text>
+    <text class="h" x="170" y="96">3D Design and 3D Printing</text>
+    <text class="p" x="170" y="132">CAD modeling, enclosure design, functional prints,</text>
+    <text class="p" x="170" y="160">mechanical parts, and rapid prototyping.</text>
+  </g>
+</svg>
